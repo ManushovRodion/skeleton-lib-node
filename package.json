@@ -8,7 +8,11 @@
     "/dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "publish-lib": "npm run build && npm publish",
+    "publish-beta": "npm run build && npm publish --tag beta",
+    "publish-dryrun": "npm run build && npm publish --dry-run"
   },
   "repository": {
     "type": "git",
@@ -22,9 +26,12 @@
     "lib"
   ],
   "author": "manushov_rodion",
-  "license" : "MIT",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ManushovRodion/skeleton-lib-node/issues"
   },
-  "homepage": "https://github.com/ManushovRodion/skeleton-lib-node#readme"
+  "homepage": "https://github.com/ManushovRodion/skeleton-lib-node#readme",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
 }

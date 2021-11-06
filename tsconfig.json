@@ -3,6 +3,7 @@
     "module": "commonjs",
     "target": "es2015",
     "declaration": true,
+    "removeComments": true,
     "outDir": "./dist"
   },
   "include": [
