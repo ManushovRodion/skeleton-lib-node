@@ -11,6 +11,8 @@
     "build": "rimraf ./dist && tsc",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
+    "prettier": "prettier --config .prettierrc src/**/*.ts --write",
+    "prettier:watch": "onchange src/**/*.ts -- prettier --write",
     "publish:lib": "npm run build && npm publish",
     "publish:beta": "npm run build && npm publish --tag beta",
     "publish:dryrun": "npm run build && npm publish --dry-run"
@@ -39,20 +41,21 @@
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "onchange": "^7.1.0",
+    "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.4.4"
   },
   "engines": {
     "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,ts}": [
-      "yarn lint",
-      "git add"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn prettier && yarn lint"
+    }
   }
 }
