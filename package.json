@@ -2,13 +2,14 @@
   "name": "skeleton-lib-node",
   "version": "1.0.0",
   "description": "RU: Скелет для создания node библиотек с поддержкой TS; EN: Skeleton for building TS-enabled node libraries",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/lib/index.js",
+  "types": "dist/types/index.d.ts",
   "files": [
     "/dist"
   ],
   "scripts": {
-    "build": "rimraf ./dist && tsc",
+    "build": "yarn build:clear && tsc",
+    "build:clear": "rimraf ./dist",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "prettier": "prettier --config .prettierrc src/**/*.ts --write",
