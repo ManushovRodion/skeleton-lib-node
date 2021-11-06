@@ -2,7 +2,11 @@
   "name": "skeleton-lib-node",
   "version": "1.0.0",
   "description": "RU: Скелет для создания node библиотек с поддержкой TS; EN: Skeleton for building TS-enabled node libraries",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
