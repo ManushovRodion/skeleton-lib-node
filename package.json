@@ -1,0 +1,26 @@
+{
+  "name": "skeleton-lib-node",
+  "version": "1.0.0",
+  "description": "RU: Скелет для создания node библиотек с поддержкой TS; EN: Skeleton for building TS-enabled node libraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManushovRodion/skeleton-lib-node.git"
+  },
+  "keywords": [
+    "skeleton",
+    "template",
+    "js",
+    "ts",
+    "lib"
+  ],
+  "author": "manushov_rodion",
+  "license" : "MIT",
+  "bugs": {
+    "url": "https://github.com/ManushovRodion/skeleton-lib-node/issues"
+  },
+  "homepage": "https://github.com/ManushovRodion/skeleton-lib-node#readme"
+}
