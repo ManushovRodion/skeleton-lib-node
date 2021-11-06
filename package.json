@@ -8,8 +8,7 @@
     "/dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build": "rimraf ./dist && tsc",
     "publish-lib": "npm run build && npm publish",
     "publish-beta": "npm run build && npm publish --tag beta",
     "publish-dryrun": "npm run build && npm publish --dry-run"
@@ -32,6 +31,8 @@
   },
   "homepage": "https://github.com/ManushovRodion/skeleton-lib-node#readme",
   "devDependencies": {
+    "@types/node": "^16.11.6",
+    "rimraf": "^3.0.2",
     "typescript": "^4.4.4"
   }
 }
