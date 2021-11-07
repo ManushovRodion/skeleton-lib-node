@@ -22,9 +22,9 @@
     "rollup:es": "rollup -c ./rollup.config-es.ts && copyfiles -f ./_tmp/skeleton-lib-node.es.js ./dist",
     "rollup:umd": "rollup -c ./rollup.config-umd.ts && copyfiles -f ./_tmp/skeleton-lib-node.umd.js ./dist",
     "rollup:types": "rollup -c ./rollup.config-types.ts",
-    "publish:lib": "npm run build && npm publish",
-    "publish:beta": "npm run build && npm publish --tag beta",
-    "publish:dryrun": "npm run build && npm publish --dry-run"
+    "publish:lib": "yarn build && npm publish",
+    "publish:beta": "yarn build && npm publish --tag beta",
+    "publish:dryrun": "yarn build && npm publish --dry-run"
   },
   "repository": {
     "type": "git",
