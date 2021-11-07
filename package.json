@@ -28,8 +28,10 @@
     "rollup:umd": "rollup -c ./rollup.config-umd.ts && copyfiles -f ./_tmp/skeleton-lib-node.umd.js ./dist",
     "rollup:lib": "rollup -c ./rollup.config-lib.ts && copyfiles -f ./_tmp/index.js ./lib",
     "rollup:types": "rollup -c ./rollup.config-types.ts",
-    "publish:lib": "yarn build && npm publish",
-    "publish:beta": "yarn build && npm publish --tag beta"
+    "publish:standart": "yarn build && npm publish",
+    "publish:lib": "yarn build:lib && npm publish",
+    "publish:standart-beta": "yarn build && npm publish --tag beta",
+    "publish:lib-beta": "yarn build:lib && npm publish --tag beta"
   },
   "repository": {
     "type": "git",
