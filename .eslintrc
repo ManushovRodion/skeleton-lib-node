@@ -9,6 +9,12 @@
   "parserOptions": {
     "project": "./tsconfig.eslint.json"
   },
+  "ignorePatterns": [
+    "rollup.config-cjs.ts",
+    "rollup.config-es.ts",
+    "rollup.config-umd.ts",
+    "rollup.config-types.ts"
+  ],
   "extends": [
     "airbnb-base",
     "airbnb-typescript/base",

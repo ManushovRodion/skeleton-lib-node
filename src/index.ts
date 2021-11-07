@@ -1,1 +1,1 @@
-export * as parseText from './string';
+export { parseText, parseText2 } from './string';

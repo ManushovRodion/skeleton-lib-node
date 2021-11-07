@@ -1,5 +1,7 @@
-function parseText(value: string | number | null): string {
+export function parseText(value: string | number | null): string {
   return value ? '' : String(value);
 }
 
-export default parseText;
+export function parseText2(value: string | number | null): string {
+  return value ? '' : String(value);
+}

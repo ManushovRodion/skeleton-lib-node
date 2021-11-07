@@ -2,18 +2,26 @@
   "name": "skeleton-lib-node",
   "version": "1.0.0",
   "description": "RU: Скелет для создания node библиотек с поддержкой TS; EN: Skeleton for building TS-enabled node libraries",
-  "main": "dist/lib/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/skeleton-lib-node.cjs.js",
+  "types": "dist/skeleton-lib-node.d.ts",
+  "unpkg": "dist/skeleton-lib-node.umd.js",
+  "module": "dist/skeleton-lib-node.es.js",
   "files": [
-    "/dist"
+    "dist",
+    "LICENSE",
+    "README.md"
   ],
   "scripts": {
-    "build": "yarn build:clear && tsc",
-    "build:clear": "rimraf ./dist",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "prettier": "prettier --config .prettierrc src/**/*.ts --write",
+    "prettier": "prettier --config .prettierrc ./**/*.ts --write",
     "prettier:watch": "onchange src/**/*.ts -- prettier --write",
+    "build": "yarn build:clear && yarn rollup:cjs && yarn rollup:es && yarn rollup:umd && yarn rollup:types && rimraf ./_tmp",
+    "build:clear": "rimraf ./dist && rimraf ./_tmp",
+    "rollup:cjs": "rollup -c ./rollup.config-cjs.ts && copyfiles -f ./_tmp/skeleton-lib-node.cjs.js ./dist",
+    "rollup:es": "rollup -c ./rollup.config-es.ts && copyfiles -f ./_tmp/skeleton-lib-node.es.js ./dist",
+    "rollup:umd": "rollup -c ./rollup.config-umd.ts && copyfiles -f ./_tmp/skeleton-lib-node.umd.js ./dist",
+    "rollup:types": "rollup -c ./rollup.config-types.ts",
     "publish:lib": "npm run build && npm publish",
     "publish:beta": "npm run build && npm publish --tag beta",
     "publish:dryrun": "npm run build && npm publish --dry-run"
@@ -35,10 +43,13 @@
     "url": "https://github.com/ManushovRodion/skeleton-lib-node/issues"
   },
   "homepage": "https://github.com/ManushovRodion/skeleton-lib-node#readme",
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^16.11.6",
     "@typescript-eslint/eslint-plugin": "^5.3.0",
     "@typescript-eslint/parser": "^5.3.0",
+    "copy": "^0.3.2",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^15.0.0",
@@ -49,6 +60,11 @@
     "onchange": "^7.1.0",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
+    "rollup": "^2.59.0",
+    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.4.4"
   },
   "engines": {
