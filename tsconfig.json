@@ -7,7 +7,9 @@
     "noUnusedLocals": true,
     "noImplicitAny": true,
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "outDir": "./_tmp",
+    "declarationDir": "."
   },
   "include": [
     "src"

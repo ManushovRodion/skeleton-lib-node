@@ -1,5 +1,11 @@
 import { parseText } from './string';
 
-const text = parseText(1);
+export function main(): void {
+  const text = parseText(1);
 
-console.error(`Ваша версия node ${process.version} ниже, чем необходимо ${text}!`);
+  console.error(`Ваша версия node ${process.version} ниже, чем необходимо ${text}!`);
+}
+
+export default main;
+
+main();

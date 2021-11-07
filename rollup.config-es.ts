@@ -1,4 +1,5 @@
-import typescript from 'rollup-plugin-typescript2';
+import typescript from '@rollup/plugin-typescript';
+import { terser } from 'rollup-plugin-terser';
 import { dependencies, name } from './package.json';
 
 const rollupConfigES = [
@@ -10,7 +11,12 @@ const rollupConfigES = [
       indent: false,
     },
     external: [...Object.keys(dependencies || {})],
-    plugins: [typescript()],
+    plugins: [
+      typescript({ tsconfig: './tsconfig.json' }),
+      terser({
+        compress: true,
+      }),
+    ],
   },
 ];
 
