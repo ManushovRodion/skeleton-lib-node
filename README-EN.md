@@ -4,6 +4,17 @@ Translated: [Язык:RU](https://github.com/ManushovRodion/skeleton-lib-node#re
 
 > Skeleton for building TS-enabled node libraries
 
+## TODO
+
+- [x] TypeScript support
+- [x] Linter/Prettier
+- [x] Building a library for CJS(CommonJS), UMD and ES
+- [x] Building cli library
+- [x] Build one \* .d.ts file
+- [x] Publish NPM
+- [ ] Unit testing
+- [ ] e2e testing
+
 ## Documentation
 
 To make your library based on this skeleton, you need:
