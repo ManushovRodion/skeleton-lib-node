@@ -14,7 +14,7 @@
     "rollup.config-es.ts",
     "rollup.config-umd.ts",
     "rollup.config-types.ts",
-    "rollup.config-lib.ts",
+    "rollup.config-cli.ts",
     "cmd.js"
   ],
   "extends": [

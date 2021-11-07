@@ -7,7 +7,7 @@
   "unpkg": "dist/skeleton-lib-node.umd.js",
   "module": "dist/skeleton-lib-node.es.js",
   "bin": {
-    "skeleton-lib-node": "./bin/cmd.js"
+    "skeleton-lib-node": "./bin/cli.js"
   },
   "files": [
     "dist",
@@ -20,18 +20,19 @@
     "lint:fix": "eslint . --ext .ts --fix",
     "prettier": "prettier --config .prettierrc ./**/*.ts --write",
     "prettier:watch": "onchange src/**/*.ts -- prettier --write",
-    "build": "yarn lint && yarn build:clear && yarn rollup:cjs && yarn rollup:es && yarn rollup:umd && yarn rollup:types && rimraf ./_tmp",
-    "build:lib": "yarn lint && yarn build:clear && yarn rollup:lib && rimraf ./_tmp",
+    "build:lib": "yarn lint && yarn build:clear && yarn rollup:cjs && yarn rollup:es && yarn rollup:umd && yarn rollup:types && rimraf ./_tmp",
+    "build:lib-cli": "yarn lint && yarn build:clear && yarn rollup:cli && rimraf ./_tmp",
     "build:clear": "rimraf ./dist && rimraf ./lib && rimraf ./_tmp",
     "rollup:cjs": "rollup -c ./rollup.config-cjs.ts && copyfiles -f ./_tmp/skeleton-lib-node.cjs.js ./dist",
     "rollup:es": "rollup -c ./rollup.config-es.ts && copyfiles -f ./_tmp/skeleton-lib-node.es.js ./dist",
     "rollup:umd": "rollup -c ./rollup.config-umd.ts && copyfiles -f ./_tmp/skeleton-lib-node.umd.js ./dist",
-    "rollup:lib": "rollup -c ./rollup.config-lib.ts && copyfiles -f ./_tmp/index.js ./lib",
+    "rollup:cli": "rollup -c ./rollup.config-cli.ts && copyfiles -f ./_tmp/index.js ./cli",
     "rollup:types": "rollup -c ./rollup.config-types.ts",
-    "publish:standart": "yarn build && npm publish",
     "publish:lib": "yarn build:lib && npm publish",
-    "publish:standart-beta": "yarn build && npm publish --tag beta",
-    "publish:lib-beta": "yarn build:lib && npm publish --tag beta"
+    "publish:lib-cli": "yarn build:lib-cli && npm publish",
+    "publish:lib-beta": "yarn build:lib && npm publish --tag beta",
+    "publish:lib-cli-beta": "yarn build:lib-cli && npm publish --tag beta",
+    "demo:cli": "yarn build:lib-cli && yarn upgrade skeleton-lib-node && yarn skeleton-lib-node"
   },
   "repository": {
     "type": "git",
@@ -71,6 +72,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
+    "skeleton-lib-node": "file:.",
     "typescript": "^4.4.4"
   },
   "engines": {
