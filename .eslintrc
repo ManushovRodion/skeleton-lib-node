@@ -13,7 +13,9 @@
     "rollup.config-cjs.ts",
     "rollup.config-es.ts",
     "rollup.config-umd.ts",
-    "rollup.config-types.ts"
+    "rollup.config-types.ts",
+    "rollup.config-lib.ts",
+    "cmd.js"
   ],
   "extends": [
     "airbnb-base",

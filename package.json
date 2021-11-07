@@ -6,8 +6,12 @@
   "types": "dist/skeleton-lib-node.d.ts",
   "unpkg": "dist/skeleton-lib-node.umd.js",
   "module": "dist/skeleton-lib-node.es.js",
+  "bin": {
+    "skeleton-lib-node": "./bin/cmd.js"
+  },
   "files": [
     "dist",
+    "lib",
     "LICENSE",
     "README.md"
   ],
@@ -17,14 +21,15 @@
     "prettier": "prettier --config .prettierrc ./**/*.ts --write",
     "prettier:watch": "onchange src/**/*.ts -- prettier --write",
     "build": "yarn build:clear && yarn rollup:cjs && yarn rollup:es && yarn rollup:umd && yarn rollup:types && rimraf ./_tmp",
+    "build:lib": "yarn build:clear && yarn rollup:lib && rimraf ./_tmp",
     "build:clear": "rimraf ./dist && rimraf ./_tmp",
     "rollup:cjs": "rollup -c ./rollup.config-cjs.ts && copyfiles -f ./_tmp/skeleton-lib-node.cjs.js ./dist",
     "rollup:es": "rollup -c ./rollup.config-es.ts && copyfiles -f ./_tmp/skeleton-lib-node.es.js ./dist",
     "rollup:umd": "rollup -c ./rollup.config-umd.ts && copyfiles -f ./_tmp/skeleton-lib-node.umd.js ./dist",
+    "rollup:lib": "rollup -c ./rollup.config-lib.ts && copyfiles -f ./_tmp/index.js ./lib",
     "rollup:types": "rollup -c ./rollup.config-types.ts",
     "publish:lib": "yarn build && npm publish",
-    "publish:beta": "yarn build && npm publish --tag beta",
-    "publish:dryrun": "yarn build && npm publish --dry-run"
+    "publish:beta": "yarn build && npm publish --tag beta"
   },
   "repository": {
     "type": "git",
