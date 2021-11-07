@@ -1,7 +1,7 @@
 import dts from "rollup-plugin-dts";
 import { name } from './package.json';
 
-const rollupConfigES = [
+const rollupConfigTypes = [
   {
     input: `_tmp/index.d.ts`,
     output: {
@@ -14,4 +14,4 @@ const rollupConfigES = [
   },
 ];
 
-export default rollupConfigES;
+export default rollupConfigTypes;
