@@ -1,7 +1,7 @@
 import typescript from 'rollup-plugin-typescript2';
 import nodeResolve from 'rollup-plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
-import { name } from './package.json';
+import { name, dependencies } from './package.json';
 
 const rollupConfigUMD = [
   {
@@ -12,6 +12,7 @@ const rollupConfigUMD = [
       name,
       indent: false,
     },
+    external: [...Object.keys(dependencies || {})],
     plugins: [
       typescript(),
       nodeResolve({
@@ -28,6 +29,7 @@ const rollupConfigUMD = [
       name,
       indent: false,
     },
+    external: [...Object.keys(dependencies || {})],
     plugins: [
       typescript(),
       nodeResolve({
