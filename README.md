@@ -1,4 +1,4 @@
-Переведено: [Lang:EN](https://github.com/ManushovRodion/skeleton-lib-node/blob/master/README-EN.md)
+Переведено: [EN](https://github.com/ManushovRodion/skeleton-lib-node/blob/master/README-EN.md)
 
 # Skeleton Lib Node
 

@@ -1,4 +1,4 @@
-Translated: [Язык:RU](https://github.com/ManushovRodion/skeleton-lib-node#readme)
+Translated: [RU](https://github.com/ManushovRodion/skeleton-lib-node#readme)
 
 # Skeleton Lib Node
 
