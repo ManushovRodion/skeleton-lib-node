@@ -2,6 +2,12 @@
 
 # Skeleton Lib Node
 
+![license] ![node] ![yarn]
+
+[license]: https://img.shields.io/github/license/ManushovRodion/skeleton-lib-node
+[node]: https://img.shields.io/badge/node-%5E12.22.0%20%7C%7C%20%5E14.17.0%20%7C%7C%20%3E%3D16.0.0-red
+[yarn]: https://img.shields.io/badge/yarn-%3E%3D1.22.10-blue
+
 > Скелет для создания node библиотек с поддержкой TS
 
 ## TODO
@@ -25,7 +31,8 @@
 4. Изменить или убрать **author**, в файле **package.json**
 5. Изменить **LICENSE**
 6. Изменить **README**
-7. Писать код в **SRC** и собирать **bild** или **build:lib**, в зависимости от нужной сборки.
+7. Установить пакеты через команду **yarn**
+8. Писать код в **SRC** и собирать **bild** или **build:lib**, в зависимости от нужной сборки.
 
 ## Команды
 

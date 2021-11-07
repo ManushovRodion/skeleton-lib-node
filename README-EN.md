@@ -2,6 +2,12 @@ Translated: [Язык:RU](https://github.com/ManushovRodion/skeleton-lib-node#re
 
 # Skeleton Lib Node
 
+![license] ![node] ![yarn]
+
+[license]: https://img.shields.io/github/license/ManushovRodion/skeleton-lib-node
+[node]: https://img.shields.io/badge/node-%5E12.22.0%20%7C%7C%20%5E14.17.0%20%7C%7C%20%3E%3D16.0.0-red
+[yarn]: https://img.shields.io/badge/yarn-%3E%3D1.22.10-blue
+
 > Skeleton for building TS-enabled node libraries
 
 ## TODO
@@ -25,7 +31,8 @@ To make your library based on this skeleton, you need:
 4. Change or remove **author**, in the **package.json** file
 5. Change **LICENSE**
 6. Change **README**
-7. Write code in **SRC** and build **bild** or **build:lib** depending on the required build.
+7. Install packages via **yarn** command
+8. Write code in **SRC** and build **bild** or **build:lib** depending on the required build.
 
 ## Commands
 
