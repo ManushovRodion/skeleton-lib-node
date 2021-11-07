@@ -33,7 +33,7 @@ To make your library based on this skeleton, you need:
 5. Change **LICENSE**
 6. Change **README**
 7. Install packages via **yarn** command
-8. Write code in **SRC** and build **bild** or **build:lib** depending on the required build.
+8. Write code in **src/** and build **build** or **build:lib** depending on the required build.
 
 ## Commands
 
