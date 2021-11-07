@@ -2,11 +2,12 @@
 
 # Skeleton Lib Node
 
-![license] ![node] ![yarn]
+![status] ![license] ![node] ![yarn]
 
 [license]: https://img.shields.io/github/license/ManushovRodion/skeleton-lib-node
 [node]: https://img.shields.io/badge/node-%5E12.22.0%20%7C%7C%20%5E14.17.0%20%7C%7C%20%3E%3D16.0.0-red
 [yarn]: https://img.shields.io/badge/yarn-%3E%3D1.22.10-blue
+[status]: https://img.shields.io/badge/template-skeleton-9cf
 
 > Скелет для создания node библиотек с поддержкой TS
 
