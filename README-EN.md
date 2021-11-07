@@ -11,7 +11,7 @@ Translated: [RU](https://github.com/ManushovRodion/skeleton-lib-node#readme)
 
 > Skeleton for building TS-enabled node libraries
 
-## TODO
+### # TODO
 
 - [x] TypeScript support
 - [x] Linter/Prettier
@@ -22,7 +22,7 @@ Translated: [RU](https://github.com/ManushovRodion/skeleton-lib-node#readme)
 - [ ] Unit testing
 - [ ] e2e testing
 
-## Documentation
+### # Documentation
 
 To make your library based on this skeleton, you need:
 
@@ -35,7 +35,7 @@ To make your library based on this skeleton, you need:
 7. Install packages via **yarn** command
 8. Write code in **src/** and build **build** or **build:lib** depending on the required build.
 
-## Commands
+### # Commands
 
 | Name                  | Description                                                                           |
 | --------------------- | ------------------------------------------------------------------------------------- |
@@ -56,6 +56,14 @@ To make your library based on this skeleton, you need:
 | publish:lib           | npm publish package, beta version                                                     |
 | publish:lib-beta      | npm publish cli package, beta version                                                 |
 
-## License
+### # README Badge
+
+Is the library created on this skeleton? Add a README icon to show this: [![skeleton-lib-node](https://img.shields.io/badge/created%20on%20the%20basis-%20skeleton--lib--node-blue.svg)](https://github.com/ManushovRodion/skeleton-lib-node)
+
+```
+[![skeleton-lib-node](https://img.shields.io/badge/created%20on%20the%20basis-%20skeleton--lib--node-blue.svg)](https://github.com/ManushovRodion/skeleton-lib-node)
+```
+
+### # License
 
 [MIT](https://github.com/ManushovRodion/skeleton-lib-node/blob/master/LICENSE)

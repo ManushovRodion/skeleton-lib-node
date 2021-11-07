@@ -11,7 +11,7 @@
 
 > Скелет для создания node библиотек с поддержкой TS
 
-## TODO
+### # TODO
 
 - [x] Поддержка TypeScript
 - [x] Linter/Prettier
@@ -22,7 +22,7 @@
 - [ ] Unit тестирование
 - [ ] e2e тестирование
 
-## Документация
+### # Документация
 
 Чтобы сделать свою библиотеку на базе данного скелета, необходимо:
 
@@ -35,7 +35,7 @@
 7. Установить пакеты через команду **yarn**
 8. Писать код в **src/** и собирать **build** или **build:lib**, в зависимости от нужной сборки.
 
-## Команды
+### # Команды
 
 | Название              | Описание                                                   |
 | --------------------- | ---------------------------------------------------------- |
@@ -56,6 +56,14 @@
 | publish:lib           | npm публикация cli пакета                                  |
 | publish:lib-beta      | npm публикация cli пакета, beta версией                    |
 
-## Лицензия
+### # Значек для README
+
+Библиотека создана на данном скелете? Добавьте значок в README, чтобы показать это: [![skeleton-lib-node](https://img.shields.io/badge/created%20on%20the%20basis-%20skeleton--lib--node-blue.svg)](https://github.com/ManushovRodion/skeleton-lib-node)
+
+```
+[![skeleton-lib-node](https://img.shields.io/badge/created%20on%20the%20basis-%20skeleton--lib--node-blue.svg)](https://github.com/ManushovRodion/skeleton-lib-node)
+```
+
+### # Лицензия
 
 [MIT](https://github.com/ManushovRodion/skeleton-lib-node/blob/master/LICENSE)
