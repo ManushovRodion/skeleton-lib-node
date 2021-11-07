@@ -1,4 +1,4 @@
-import dts from "rollup-plugin-dts";
+import dts from 'rollup-plugin-dts';
 import { name } from './package.json';
 
 const rollupConfigTypes = [
@@ -8,9 +8,7 @@ const rollupConfigTypes = [
       file: `dist/${name}.d.ts`,
       format: 'es',
     },
-    plugins: [
-      dts()
-    ],
+    plugins: [dts()],
   },
 ];
 

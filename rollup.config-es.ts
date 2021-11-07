@@ -10,9 +10,7 @@ const rollupConfigES = [
       indent: false,
     },
     external: [...Object.keys(dependencies || {})],
-    plugins: [
-      typescript()
-    ],
+    plugins: [typescript()],
   },
 ];
 

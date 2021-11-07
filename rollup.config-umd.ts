@@ -16,7 +16,7 @@ const rollupConfigUMD = [
       typescript(),
       nodeResolve({
         jsnext: true,
-      })
+      }),
     ],
   },
 
@@ -37,7 +37,7 @@ const rollupConfigUMD = [
         compress: true,
       }),
     ],
-  }
+  },
 ];
 
 export default rollupConfigUMD;
