@@ -4,10 +4,10 @@ Translated: [RU](https://github.com/ManushovRodion/skeleton-lib-node#readme)
 
 ![status] ![license] ![node] ![yarn]
 
-[license]: https://img.shields.io/github/license/ManushovRodion/skeleton-lib-node
-[node]: https://img.shields.io/badge/node-%5E12.22.0%20%7C%7C%20%5E14.17.0%20%7C%7C%20%3E%3D16.0.0-red
-[yarn]: https://img.shields.io/badge/yarn-%3E%3D1.22.10-blue
-[status]: https://img.shields.io/badge/template-skeleton-9cf
+[license]: https://img.shields.io/github/license/ManushovRodion/skeleton-lib-node?style=for-the-badge
+[node]: https://img.shields.io/badge/node-%5E12.22.0%20%7C%7C%20%5E14.17.0%20%7C%7C%20%3E%3D16.0.0-red?style=for-the-badge
+[yarn]: https://img.shields.io/badge/yarn-%3E%3D1.22.10-blue?style=for-the-badge
+[status]: https://img.shields.io/badge/template-skeleton-9cf?style=for-the-badge
 
 > Skeleton for building TS-enabled node libraries
 
@@ -58,10 +58,10 @@ To make your library based on this skeleton, you need:
 
 ## # README Badge
 
-Is the library created on this skeleton? Add a README icon to show this: [![skeleton-lib-node](https://img.shields.io/badge/created%20on%20the%20basis-%20skeleton--lib--node-blue.svg)](https://github.com/ManushovRodion/skeleton-lib-node)
+Is the library created on this skeleton? Add a README icon to show this: [![skeleton-lib-node](https://img.shields.io/badge/created%20on%20the%20basis-%20skeleton--lib--node-blue.svg?style=for-the-badge)](https://github.com/ManushovRodion/skeleton-lib-node)
 
 ```
-[![skeleton-lib-node](https://img.shields.io/badge/created%20on%20the%20basis-%20skeleton--lib--node-blue.svg)](https://github.com/ManushovRodion/skeleton-lib-node)
+[![skeleton-lib-node](https://img.shields.io/badge/created%20on%20the%20basis-%20skeleton--lib--node-blue.svg?style=for-the-badge)](https://github.com/ManushovRodion/skeleton-lib-node)
 ```
 
 ## # License
