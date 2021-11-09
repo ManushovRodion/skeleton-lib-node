@@ -1,4 +1,4 @@
-Translated: [EN](https://github.com/ManushovRodion/skeleton-lib-node/blob/master/README-RU.md)
+### readme: [Home](https://github.com/ManushovRodion/skeleton-lib-node#readme) | [RU](https://github.com/ManushovRodion/skeleton-lib-node/blob/master/README-RU.md)
 
 # Skeleton Lib Node
 
