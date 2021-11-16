@@ -11,6 +11,7 @@
     "outDir": "./_tmp",
     "declarationDir": ".",
     "importHelpers": true,
+    "resolveJsonModule": true
   },
   "include": [
     "src"
