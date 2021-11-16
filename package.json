@@ -72,6 +72,7 @@
     "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-terser": "^7.0.2",
     "skeleton-lib-node": "file:.",
+    "tslib": "^2.3.1",
     "typescript": "^4.4.4"
   },
   "engines": {

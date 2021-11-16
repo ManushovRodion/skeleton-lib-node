@@ -9,7 +9,8 @@
     "strict": true,
     "esModuleInterop": true,
     "outDir": "./_tmp",
-    "declarationDir": "."
+    "declarationDir": ".",
+    "importHelpers": true,
   },
   "include": [
     "src"
