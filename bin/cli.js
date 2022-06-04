@@ -1,2 +1,9 @@
 #!/usr/bin/env node
-require('../cli/index.js');
+const lib = require('../dist/{name-package}.js');
+
+try {
+  lib.cli(process);
+} catch (e) {
+  console.error(e);
+  process.exit(0);
+}

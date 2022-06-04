@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "declaration": true,
+    "rootDir": "src",
+    "outDir": "dist",
     "target": "es5",
     "moduleResolution": "node",
     "noEmit": true,
@@ -8,17 +9,11 @@
     "noImplicitAny": true,
     "strict": true,
     "esModuleInterop": true,
-    "outDir": "./_tmp",
-    "declarationDir": ".",
+    "declaration": true,
+    "declarationDir": "type",
     "importHelpers": true,
     "resolveJsonModule": true
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "lib",
-  ]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "scripts"]
 }

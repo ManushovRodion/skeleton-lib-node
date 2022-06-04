@@ -1,12 +1,13 @@
 # Node artifact files
 node_modules
 dist
-cli
-_tmp
 
 # Generated OS
 .DS_Store
 Thumbs.db
+
+# Local files
+.local
 
 # Log files
 *.log
