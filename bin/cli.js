@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const lib = require('../dist/{name-package}.js');
+const lib = require('../dist/{name-package}.cjs');
 
 try {
   lib.cli(process);
