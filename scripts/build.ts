@@ -68,7 +68,10 @@ async function main(namePackage: string) {
   const mapConfigs: { type: Type; plugins: Plugin[] }[] = [
     {
       type: 'cjs',
-      plugins: [typescript({ tsconfig: `${dirPackage}/tsconfig.json` }), terser({ compress: true })],
+      plugins: [
+        typescript({ tsconfig: `${dirPackage}/tsconfig.json` }),
+        terser({ compress: true }),
+      ],
     },
     {
       type: 'es',
@@ -84,7 +87,12 @@ async function main(namePackage: string) {
     createOutputOption(map.type, dirPackage, namePackage, map.plugins)
   );
 
-  const outputOptionTypes = createOutputOption('type', dirPackage, namePackage, [dts()])
+  const outputOptionTypes = createOutputOption(
+    'type',
+    dirPackage,
+    namePackage,
+    [dts()]
+  );
 
   await Promise.allSettled(outputOptionsList.map((options) => build(options)));
   await build(outputOptionTypes);

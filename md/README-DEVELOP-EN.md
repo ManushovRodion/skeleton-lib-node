@@ -28,7 +28,7 @@ Mask template:
 
 | Name        | Description                                            |
 | ----------- | ------------------------------------------------------ |
-| build   | Complete package build with CJS(CommonJS), UMD and ES  |
+| build       | Complete package build with CJS(CommonJS), UMD and ES  |
 | lint        | Checking code for linter rules                         |
 | lint:format | Corrects the code according to the airbnb linter rules |
 
