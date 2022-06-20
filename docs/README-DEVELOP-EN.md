@@ -12,7 +12,7 @@ To make your library based on this skeleton, you need:
 2. Change links to **github** or remove, in the **package.json** file
 3. Change or remove **author**, in the **package.json** file
 4. Change **LICENSE**
-5. Change **README** and ./md/\*
+5. Change **README**, **CHANGELOG** and ./docs/\*
 6. Install packages via **yarn** command
 7. Write code in **src/** and build project by command the **build**
 
