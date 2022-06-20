@@ -31,6 +31,7 @@ Mask template:
 | build       | Complete package build with CJS(CommonJS), UMD and ES  |
 | lint        | Checking code for linter rules                         |
 | lint:format | Corrects the code according to the airbnb linter rules |
+| demo:cli    | Demonstration of the work of the library               |
 
 ## # TODO
 
