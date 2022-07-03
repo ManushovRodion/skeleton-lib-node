@@ -1,4 +1,4 @@
-import { message } from '@core';
+import { message } from '../core';
 
 export function cli(process: NodeJS.Process) {
   const argv = process.argv.slice(2);
