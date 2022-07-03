@@ -1,3 +1,7 @@
+export function getArgv(text: string) {
+  return text || 'no argv'
+}
+
 export function message(text: string) {
-  console.log(text || 'no argv');
+  console.log(getArgv(text));
 }

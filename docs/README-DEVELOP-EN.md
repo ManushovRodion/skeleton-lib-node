@@ -40,8 +40,7 @@ Mask template:
 - [x] Building a library for CJS(CommonJS), UMD and ES
 - [x] Building cli library
 - [x] Build one \* .d.ts file
-- [ ] Unit testing
-- [ ] e2e testing
+- [x] Unit testing
 - [ ] Remove message by plugins rollup
 
 ## # README Badge
