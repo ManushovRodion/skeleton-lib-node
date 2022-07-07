@@ -20,7 +20,8 @@ Mask template:
 
 - {name-package}
 - {NAME-PACKAGE}
-- {git-repo}
+- {git-repo-dir}
+- {git-repo-domain}
 - {author-repo}
 - {description}
 

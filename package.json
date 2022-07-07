@@ -6,12 +6,12 @@
   "author": "{author-repo}",
   "repository": {
     "type": "git",
-    "url": "git+https://{git-repo}/{name-package}.git"
+    "url": "git+https://{git-repo-domain}/{git-repo-dir}/{name-package}.git"
   },
   "bugs": {
-    "url": "https://{git-repo}/{name-package}/issues"
+    "url": "https://{git-repo-domain}/{git-repo-dir}/{name-package}/issues"
   },
-  "homepage": "https://{git-repo}/{name-package}",
+  "homepage": "https://{git-repo-domain}/{git-repo-dir}/{name-package}",
   "main": "dist/{name-package}.cjs.js",
   "types": "dist/{name-package}.d.ts",
   "unpkg": "dist/{name-package}.umd.js",

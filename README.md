@@ -2,7 +2,7 @@
 
 ![status] ![license]
 
-[license]: https://img.shields.io/github/license/ManushovRodion/skeleton-lib-node?style=for-the-badge
+[license]: https://img.shields.io/github/license/{git-repo-dir}/{name-package}?style=for-the-badge
 [status]: https://img.shields.io/badge/template-skeleton-9cf?style=for-the-badge
 
 - Документация пользователя: [Русский](./docs/README-RU.md)
