@@ -1,4 +1,4 @@
-# {NAME-PACKAGE}
+# SKELETON-LIB-NODE
 
 - Документация: [Русский](./docs/README-DEVELOP-RU.md)
 
