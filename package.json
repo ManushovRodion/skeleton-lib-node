@@ -1,7 +1,7 @@
 {
-  "name": "name-package",
+  "name": "{name-package}",
   "version": "0.1.0",
-  "description": "",
+  "description": "{description}",
   "license": "MIT",
   "author": "{author-repo}",
   "repository": {
