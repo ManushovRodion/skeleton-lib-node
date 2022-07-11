@@ -2,7 +2,7 @@
 
 # {NAME-PACKAGE}
 
-> {description}
+> {description-package}
 
 ## # Install
 

@@ -1,17 +1,17 @@
 {
   "name": "{name-package}",
   "version": "0.1.0",
-  "description": "{description}",
+  "description": "{description-package}",
   "license": "MIT",
-  "author": "{author-repo}",
+  "author": "{author}",
   "repository": {
     "type": "git",
-    "url": "git+https://{git-repo-domain}/{git-repo-dir}/{name-package}.git"
+    "url": "git+{url-repository}.git"
   },
   "bugs": {
-    "url": "https://{git-repo-domain}/{git-repo-dir}/{name-package}/issues"
+    "url": "{url-issues}"
   },
-  "homepage": "https://{git-repo-domain}/{git-repo-dir}/{name-package}",
+  "homepage": "{url-home}",
   "main": "dist/{name-package}.cjs.js",
   "types": "dist/{name-package}.d.ts",
   "unpkg": "dist/{name-package}.umd.js",
