@@ -22,6 +22,15 @@ To make your own transport network based on this skeleton, you need to:
 
 Location of the masks:
 
+- {name-package}: package.json, bin/cli.js, docs/README-RU.md, docs/README-EN.md,
+- {NAME-PACKAGE}: README.md, docs/README-RU.md, docs/README-EN.md, CHANGELOG.md, docs/CHANGELOG-RU.md и docs/CHANGELOG-EN.md
+- {description-package}: package.json, docs/README-RU.md и docs/README-EN.md
+- {url-repository}: package.json
+- {url-issues}: package.json
+- {url-home}: package.json
+- {author}: package.json
+- {copyright}: LICENSE
+
 ## # Commands
 
 | Name        | Description                                            |

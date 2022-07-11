@@ -22,9 +22,9 @@
 
 Расположение масок:
 
-- {name-package}: package.json, bin/cli.js, README-RU.md, README-EN.md,
-- {NAME-PACKAGE}: README.md, README-RU.md, README-EN.md, CHANGELOG.md, CHANGELOG-RU.md и CHANGELOG-EN.md
-- {description-package}: package.json, README-RU.md и README-EN.md
+- {name-package}: package.json, bin/cli.js, docs/README-RU.md, docs/README-EN.md,
+- {NAME-PACKAGE}: README.md, docs/README-RU.md, docs/README-EN.md, CHANGELOG.md, docs/CHANGELOG-RU.md и docs/CHANGELOG-EN.md
+- {description-package}: package.json, docs/README-RU.md и docs/README-EN.md
 - {url-repository}: package.json
 - {url-issues}: package.json
 - {url-home}: package.json
