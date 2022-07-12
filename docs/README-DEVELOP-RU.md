@@ -6,7 +6,9 @@
 
 ## # Документация
 
-Чтобы сделать свою библиотеку на базе данного скелета, необходимо:
+Чтобы сделать свою библиотеку на базе данного скелета, необходимо заменить маски по проекту или воспользоваться утилитой [skeleton-lib-node-cli](https://github.com/ManushovRodion/skeleton-lib-node-cli/blob/master/docs/README-RU.md).
+
+Ручная замена масок, если не планируете использовать [skeleton-lib-node-cli](https://github.com/ManushovRodion/skeleton-lib-node-cli/blob/master/docs/README-RU.md):
 
 1. Пройтись по проекту и переменовать маски, на нужные значения:
    - {name-package}: Название пакета, в нижнем регистре
