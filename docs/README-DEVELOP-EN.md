@@ -6,7 +6,9 @@
 
 ## # Documentation
 
-To make your own transport network based on this skeleton, you need to:
+To do your work based on this skeleton, you need to replace the mask according to the project or use the [skeleton-lib-node-cli](https://github.com/ManushovRodion/skeleton-lib-node-cli/blob/master/docs/README-EN.md) utility.
+
+Manual replacement of masks if you do not plan to use [skeleton-lib-node-cli](https://github.com/ManushovRodion/skeleton-lib-node-cli/blob/master/docs/README-EN.md):
 
 1. Walk through the project and change the masks to the required values:
    - {name-package}: Name of the package, in separate case
