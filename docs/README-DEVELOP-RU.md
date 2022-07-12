@@ -1,6 +1,6 @@
 ### readme: [Главная](./../README.md) | [EN](./README-DEVELOP-EN.md)
 
-# {NAME-PACKAGE}
+# SKELETON-LIB-NODE
 
 > Скелет для создания node библиотек с поддержкой TS
 
@@ -8,29 +8,35 @@
 
 Чтобы сделать свою библиотеку на базе данного скелета, необходимо:
 
-1. Переменовать, **name-package** на нужное название, в файле **package.json**
-2. Изменить ссылки на **github** или убрать, в файле **package.json**
-3. Изменить или убрать **author**, в файле **package.json**
-4. Изменить **LICENSE**
-5. Изменить **README**, **CHANGELOG** и ./docs/\*
-6. Установить пакеты через команду **yarn**
-7. Писать код в **src/** и собирать проект командой **build**
+1. Пройтись по проекту и переменовать маски, на нужные значения:
+   - {name-package}: Название пакета, в нижнем регистре
+   - {NAME-PACKAGE}: Название пакета, в верхнем регистре
+   - {description-package}: Описание проекта
+   - {url-repository}: Путь до репозитория git, где расположен проект
+   - {url-issues}: Адрес, где доступны обращения
+   - {url-home}: Домашняя страница проекта
+   - {author}: Автор проекта. Можно написать: "ФИО <email> (url)" - но можно обойтись ФИО
+   - {copyright}: Копирайт для лицензии
+2. Установить пакеты через команду **yarn**
+3. Писать код в **src/** и собирать проект командой **build**
 
-Маски по шаблону:
+Расположение масок:
 
-- {name-package}
-- {NAME-PACKAGE}
-- {git-repo-dir}
-- {git-repo-domain}
-- {author-repo}
-- {description}
+- {name-package}: package.json, bin/cli.js, docs/README-RU.md, docs/README-EN.md,
+- {NAME-PACKAGE}: README.md, docs/README-RU.md, docs/README-EN.md, CHANGELOG.md, docs/CHANGELOG-RU.md и docs/CHANGELOG-EN.md
+- {description-package}: package.json, docs/README-RU.md и docs/README-EN.md
+- {url-repository}: package.json
+- {url-issues}: package.json
+- {url-home}: package.json
+- {author}: package.json
+- {copyright}: LICENSE
 
 ## # Команды
 
 | Название    | Описание                                   |
 | ----------- | ------------------------------------------ |
 | build       | Сборка проекта                             |
-| lint        | Проверка скриптов по правлиам линтера      |
+| lint        | Проверка скриптов по правилам линтера      |
 | lint:format | Корректировка скриптов по правилам линтера |
 | demo:cli    | Демо работы cli библиотеки                 |
 

@@ -1,29 +1,35 @@
 ### readme: [Home](./../README.md) | [RU](./README-DEVELOP-RU.md)
 
-# {NAME-PACKAGE}
+# SKELETON-LIB-NODE
 
 > Skeleton for building TS-enabled node libraries
 
 ## # Documentation
 
-To make your library based on this skeleton, you need:
+To make your own transport network based on this skeleton, you need to:
 
-1. Change, **name-package** to the desired name, in the **package.json** file
-2. Change links to **github** or remove, in the **package.json** file
-3. Change or remove **author**, in the **package.json** file
-4. Change **LICENSE**
-5. Change **README**, **CHANGELOG** and ./docs/\*
-6. Install packages via **yarn** command
-7. Write code in **src/** and build project by command the **build**
+1. Walk through the project and change the masks to the required values:
+   - {name-package}: Name of the package, in separate case
+   - {NAME-PACKAGE}: Package name included in register
+   - {description-package}: Description of the project
+   - {url-repository}: Path to the git repository where the project is located
+   - {url-issues}: Address where secondary
+   - {url-home}: Project home page
+   - {author}: Author of the project. You can write: "full name <email> (url)" - but you can use the full name
+   - {copyright}: Copyright under license
+2. Set of packages through the command **yarn**
+3. Write code in **src/** and build the project with the **build** command
 
-Mask template:
+Location of the masks:
 
-- {name-package}
-- {NAME-PACKAGE}
-- {git-repo-dir}
-- {git-repo-domain}
-- {author-repo}
-- {description}
+- {name-package}: package.json, bin/cli.js, docs/README-RU.md, docs/README-EN.md,
+- {NAME-PACKAGE}: README.md, docs/README-RU.md, docs/README-EN.md, CHANGELOG.md, docs/CHANGELOG-RU.md и docs/CHANGELOG-EN.md
+- {description-package}: package.json, docs/README-RU.md и docs/README-EN.md
+- {url-repository}: package.json
+- {url-issues}: package.json
+- {url-home}: package.json
+- {author}: package.json
+- {copyright}: LICENSE
 
 ## # Commands
 
